@@ -1,0 +1,670 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    .navbar{
+        display: flex;
+        margin-left: 100px;
+        #logoHeader{
+            width:120px;
+            height: 89px;
+            background-image: url('images/bis.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -2px;
+            display: inline-block;
+        }
+        li{
+            display: inline-block;
+            padding:45px;
+            padding-top:35px;
+            padding-bottom:35px;
+            height: 20px;
+            a{
+                text-decoration: none;
+                font-family: helvetica;
+                font-size: 13px;
+                color: black;
+                text-transform: uppercase;
+            }
+        }
+        li:hover{
+            background-color: lightgray;
+            li:hover #empty{
+                background-color: lightgray;
+            }
+            border-bottom:1px solid black;
+            cursor:pointer;
+        }
+        #cart{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+#prod{
+    position: relative;
+}
+#produkti{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:0px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100px;
+    z-index: 1000;
+    li{
+        min-width: 150px;
+        a{
+            text-decoration: none;
+            font-family: helvetica;
+            font-size: 13px;
+            color: black;
+            text-transform: uppercase;
+        }
+        font-family: helvetica;
+    }
+}
+#cartItems{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right:0px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+    z-index: 1000;
+    li{
+        min-width: 250px;
+        a{
+                text-decoration: none;
+                font-family: helvetica;
+                font-size: 13px;
+                color: black;
+                text-transform: uppercase;
+        }
+    }
+}
+#cart:hover #cartItems {
+    display: block;
+}
+#prod:hover #produkti {
+    display: block;
+}
+
+#cartItems, #produkti{
+    li{
+            text-decoration: none;
+            font-family: helvetica;
+            font-size: 13px;
+            color: black;
+            text-transform: uppercase;
+    }
+}
+#line{
+    width: 100%;
+    height:2px;
+    background-color:lightgray;
+}
+.containerGlaven{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+    background-image: url('images/bis4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    input{
+        height: 50px;
+        width: 500px;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+
+    };
+    h1{
+        font-size: 40px;
+        font-family: sans-serif;
+        color: white;
+    }
+}
+.popustInfo{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-family: helvetica;
+        text-transform: uppercase;
+        font-size:32px;
+    }
+    .buttonsInfo{
+        margin-top:-10px;
+        button{
+            border-radius: 2px;
+            border-color: lightgray;
+            padding:3px;
+            margin:5px;
+            color:darkgray;
+            background-color: lightgray;
+        }
+    }
+    .cardFlexHardware{
+                display: none;
+        ul{
+            li{
+                display: inline-block;
+                margin:15px;
+            }
+        }
+    }
+    .cardFlexHardware.show{
+        display: block;
+    }
+}
+.cardFlexColors, .cardFlexSanitary, .cardFlexHomeDevices,.cardFlexBicycles{
+    display: none;
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+}
+.cardFlexColors.show{
+    display: block;
+}
+.cardFlexSanitary.show{
+    display: block;
+}
+.cardFlexHomeDevices.show{
+    display: block;
+}
+.cardFlexBicycles.show{
+    display: block;
+}
+
+.cardFlexHardware{
+    ul{
+        li:first-child{
+            width:120px;
+            height: 30px;
+            background:url("images/ineco.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        li:nth-child(2){
+            width:120px;
+            height: 30px;
+            background:url("images/total.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(3){
+            width:120px;
+            height: 30px;
+            background:url("images/gehock.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(4){
+            width:120px;
+            height: 30px;
+            background:url("images/akfix.jpg"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(5){
+            width:120px;
+            height: 30px;
+            background:url("images/sgslogo1.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(6){
+            width:120px;
+            height: 30px;
+            background:url("images/Iskra-logo.jpg"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.cardFlexSanitary{
+    ul{
+        li{
+            margin:10px;
+        }
+        li:nth-child(1){
+            width:120px;
+            height: 52px;
+            background:url("images/RocaLogo.svg.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(2){
+            width:120px;
+            height: 52px;
+            background:url("images/logo.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(3){
+            width:120px;
+            height: 52px;
+            background:url("images/images.png"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.cardFlexColors{
+    ul{
+        display:flex;
+        li{
+            margin:20px;
+        }
+        li:nth-child(1){
+            width:120px;
+            height: 80px;
+            background:url("images/logo_mk.png"),no-repeat;
+            background-size: cover;
+            background-position: 0px -15px;
+        }
+        li:nth-child(2){
+            width:120px;
+            height: 70px;
+            background:url("images/KRAFT---EN-1_1.webp"),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(3){
+            width:210px;
+            height: 35px;
+            background:url(images/bekament-logo.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(4){
+            width:120px;
+            height: 35px;
+            background:url(images/maximalogo.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.cardFlexBicycles{
+    ul{
+        li{
+            width:180px;
+            height: 45px;
+            background:url(images/Max-logo.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+.cardFlexHomeDevices{
+    ul{
+        li{
+            margin:15px;
+        }
+        li:nth-child(1){
+            width:120px;
+            height: 35px;
+            background:url(images/Gorenje_Logo.svg.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(2){
+            width:130px;
+            height: 35px;
+            background:url(images/samsung.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        li:nth-child(3){
+            width:160px;
+            height: 35px;
+            background:url(images/Bosch-logo.svg.png),no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+hr{
+    width:65%;
+}
+
+.karticki{
+    height: 1200px;
+    text-align: center;
+    h1{
+        font-family: helvetica;
+        text-transform: uppercase;
+    }
+    .kartickiFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            padding:20px;
+            margin: 5px;
+            img{
+                width:200px;
+                height:200px;
+            }
+            border: 1px solid lightgray;
+            button:last-child{
+                display: block;
+                margin: auto;
+            }
+            input{
+                width:40px;
+            }
+        }
+
+    }
+}
+
+#lineCart {
+    opacity: 0;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    visibility: hidden;
+    background-color: #e0ffe0;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 15px;
+    width: 250px;
+    transition: opacity 0.5s;
+}
+
+#lineCart.show {
+    opacity: 1;
+    visibility: visible;
+}
+footer{
+    height: 450px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    footer>p{
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        width:100%;
+        justify-content: space-evenly;
+        height: 100%;
+        margin:20px;
+        div{
+            margin:30px;
+        }
+    }
+}
+#qu1{
+    position: relative;
+    bottom: 10px;
+    width:22px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+#empty{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border:none;
+    background-color: white;
+    text-transform: uppercase;
+}
+hr:last-of-type{
+    width: 100%;
+}
+
+.flexCard{
+    display: flex;
+    flex-direction: column;
+    .firstRow{
+        img{
+            width:200px;
+            height: 200px;
+        }
+        div{
+            p:first-of-type{
+                font-size:14px;
+                color:lightgray;
+                text-align: left;
+            }
+            p:first-of-type:hover{
+                color:orange;
+            }
+            p:last-of-type:hover{
+                color:orange;
+            }
+            img:hover{
+                opacity: 0.5;
+            }
+            p:last-of-type{
+                text-align: left;
+            }
+            margin:20px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondRow{
+        display: flex;
+        div{
+            p:first-of-type{
+                font-size:14px;
+                color:lightgray;
+                text-align: left;
+            }
+            p:first-of-type:hover{
+                color:orange;
+            }
+            p:last-of-type:hover{
+                color:orange;
+            }
+            img:hover{
+                opacity: 0.5;
+            }
+            p:last-of-type{
+                text-align: left;
+            }
+            margin:20px;
+        }
+        img{
+            width:200px;
+            height: 200px;
+        }
+        justify-content: center;
+        align-items: center;
+    }
+}
+.bannerPopust{
+    hr{
+        position: relative;
+        top: 43px;
+        z-index: 0;
+    }
+    h1{
+        position:relative;
+        z-index: 2;
+        background-color: white;
+        display:inline-block;
+    }
+
+}
+
+#makePart{
+    text-align: center;
+}
+
+    #outter {
+        align-self: center;
+        cursor: pointer;
+        position: static;
+        padding-top: 10px;
+        p{
+            margin-top:-5px;
+            font-family: helvetica;
+            text-transform: uppercase;
+        }
+    }
+/*}*/
+
+fieldset{
+    height: 600px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#cotactForm{
+    height:500px;
+}
+#partnerForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    input{
+        display: block;
+        width: 450px;
+        padding:12px;
+        margin:15px;
+    }
+    button{
+        padding:12px;
+        width:150px;
+        align-self: center;
+    }
+    textarea{
+        width: 450px;
+        height:100px;
+        padding:12px;
+        margin:15px;
+    }
+}
+#submitMessage{
+    opacity: 0;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    visibility: hidden;
+    background-color: #e0ffe0;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 15px;
+    width: 250px;
+    transition: opacity 0.5s;
+}
+#submitMessage.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#facebook, #instagram, #gmail{
+    display: inline-block;
+    width:35px;
+    height:35px;
+    margin:5px;
+}
+#facebook{
+    background: url("images/facebook-circular-logo.png"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#instagram{
+    background: url("images/instagram.png"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#gmail{
+    background: url("images/gmail_logo_PNG12.png"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contactBanner{
+    height: 700px;
+    opacity: 0.7;
+    background: url("images/biss.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    #partnerForm{
+        #form {
+            border: none;
+            #submit1{
+                margin-right:auto;
+                margin-left:17px;
+            }
+        }
+    }
+}
+
+    #naslov{
+        display: inline-block;
+        margin-left: 200px;
+        text-transform: uppercase;
+        font-family: helvetica;
+        border-bottom: 1px solid black;
+    }
+#checkout {
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-family: helvetica;
+    padding:10px;
+    background-color: red;
+}
+#checkout:active{
+    opacity: 0.6;
+}
+#nameProduct, #priceProduct, #quantityProduct, .buttonsRemove{
+        margin-left:200px;
+    }
+
+#bodyPartner{
+    background-image: url("images/background.png");
+}
+header{
+    background-color: white;
+}
+#cartFooter{
+    margin-top:110px;
+}
+.bannerPopust{
+
+}

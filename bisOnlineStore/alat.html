@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <div id="outter">
+    <a id="arrow" href="#"><i class="fa fa-angle-double-left" style="font-size:48px;color:black;"></i></a>
+    <p>Back</p>
+  </div>
+  <ul class="navbar">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="makePartner.html">Make Partner</a></li>
+    <div id="logoHeader"></div>
+    <li id="prod"><a class="active" href="#" >Products</a>
+      <ul id="produkti">
+        <li><a href="siteProdukti.html">Site Produkti</a></li>
+        <li><a href="sanitarii.html">Sanitarii</a></li>
+        <li><a href="aparatiDomakjinstvo.html">Aparati za domakjinstvo</a></li>
+        <li><a href="alat.html">Alat</a></li>
+        <li><a href="gMaterijali.html">Gradezni Materijali</a></li>
+
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="cart"><a><i class="fa-solid fa-cart-shopping"><input type="number" id ="qu1" disabled value = "0" min = "1"></i></a>
+      <ul id="cartItems">
+        <li><a href="cart.html">View Cart</a></li>
+        <li><a href="cart.html">Checkout</a></li>
+        <li><button id="empty">Empty Cart</button></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+<div id="line"></div>
+
+<div class="bannerPopust">
+  <div class="flexCard">
+    <div class="firstRow">
+      <div>
+        <img src="images/inecco.jpg" alt="Inecco set">
+        <p>Bateriski Alat</p>
+        <p>Bateriski Set</p>
+      </div>
+      <div>
+        <img src="images/CKLI2009IM.jpg" alt="Rosan Tus Baterija">
+        <p>Bateriski Alat</p>
+        <p>Bateriski set</p>
+      </div>
+      <div>
+        <img src="images/CVLI2001.jpg" alt="Rosan Tus Baterija">
+        <p>Bateriski Alat</p>
+        <p>Bateriska pravosmukalka</p>
+      </div>
+      <div>
+        <img src="images/ID11008.jpg" alt="Rosan Tus Baterija">
+        <p>Bateriski Alat</p>
+        <p>Udarna dupcalka 1100W</p>
+      </div>
+    </div>
+    <div class="secondRow">
+      <div>
+        <img src="images/VC20258.jpg" alt="Rosan Tus Baterija">
+        <p>Elektricen Alat</p>
+        <p>Pravosmukalka</p>
+      </div>
+      <div>
+        <img src="images/AVC12202.jpg" alt="Rosan Tus Baterija">
+        <p>Elektricen Alat</p>
+        <p>Pravosmukalka za peleti</p>
+      </div>
+      <div>
+        <img src="images/HLL306505.jpg" alt="Rosan Tus Baterija">
+        <p>Elektricen Alat</p>
+        <p>Laserski nivelator</p>
+      </div>
+      <div>
+        <img src="images/MX218008.jpg" alt="Rosan Tus Baterija">
+        <p>Elektricen Alat</p>
+        <p>Mesalka</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="row">
+    <div>Contact
+      <hr>
+      <p>Telefon: </p>
+      <a>+389 70 676 666</a>
+      <br>
+      <a>+389 70 466 666</a>
+    </div>
+    <div>Email
+      <hr>
+      <p>bistrejd1@gmail.com</p>
+      <a id="facebook" href="https://www.facebook.com/bistrejd"></a>
+      <a id="instagram" href="https://www.instagram.com/bis.trejd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></a>
+      <a id="gmail" href="mailto:bistrejd1@gmail.com"></a>
+    </div>
+    <div>Adress
+      <hr>
+      <a>Bulevar Partizanski Odredi br. 27</a>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0720564958274!2d21.422037300000003!3d41.998729100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354144c0e2f02d7%3A0xbe6c0d1e6ae3fe3c!2sBis%20Trejd!5e0!3m2!1sen!2smk!4v1749209282529!5m2!1sen!2smk" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <p>Copyright 2025 Bis Trejd. All rights reserved.</p>
+</footer>
+</body>
+<script>
+  const lastPage = document.referrer;
+  const currentPage = window.location.host;
+  if (lastPage && lastPage.includes(currentPage)) {
+    const backLink = document.getElementById("arrow");
+    backLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.history.back();
+    });
+  }
+</script>
+</html>

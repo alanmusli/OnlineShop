@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bis Trejd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+<header>
+    <ul class="navbar">
+        <li><a id="homee"href="home.html">Home</a></li>
+        <li><a id="part" href="makePartner.html">Make Partner</a></li>
+        <div id="logoHeader"></div>
+        <li id="prod"><a class="active" href="#" >Products</a>
+            <ul id="produkti">
+                <li><a href="siteProdukti.html">Site Produkti</a></li>
+                <li><a href="sanitarii.html">Sanitarii</a></li>
+                <li><a href="aparatiDomakjinstvo.html">Aparati za domakjinstvo</a></li>
+                <li><a href="alat.html">Alat</a></li>
+                <li><a href="gMaterijali.html">Gradezni Materijali</a></li>
+
+            </ul>
+        </li>
+        <li><a id="cont" href="contact.html">Contact</a></li>
+        <li id="cart"><a><i class="fa-solid fa-cart-shopping"><input type="number" id ="qu1" disabled value = "0" min = "1"></i></a>
+            <ul id="cartItems">
+                <li><a href="cart.html">View Cart</a></li>
+                <li><a href="cart.html">Checkout</a></li>
+                <li><button id="empty">Empty Cart</button></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<div id="line"></div>
+<section class="containerGlaven">
+    <h1>Купувај паметно – едно место, илјада решенија.</h1>
+    <input type="search" id="search" placeholder="SEARCH HERE" >
+</section>
+
+<section class="popustInfo">
+    <h1>Brands we work with</h1>
+    <div class="buttonsInfo">
+    <button id="hardware">Hardware and tools</button>
+    <button id="color">Colors and Varnishes</button>
+    <button id="sanitary">Sanitary</button>
+    <button id="home">Home devices</button>
+        <button id="bicycle">Bicycles</button>
+    </div>
+    <div class="cardFlexHardware">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="cardFlexSanitary">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="cardFlexColors">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="cardFlexHomeDevices">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="cardFlexBicycles">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+</section>
+<hr>
+
+<section class="karticki">
+    <h1>Best Sellers</h1>
+    <div class="kartickiFlex">
+        <div id="karticka1" data-id="1" data-name="Rosan JM31601 Tus" data-price="4240mkd">
+            <img src="images/tus1.png" alt="Rosan Tus Baterija">
+            <p>Rosan JM31601 Tus</p>
+            <p>4,240.00mkd</p>
+            <button id="increment1">+</button>
+            <input type="number" id ="quantity1" disabled value = "1" min = "1">
+            <button id="decrement1">-</button>
+            <button id="sub1" type="submit">Add to cart</button>
+        </div>
+        <div id="karticka2" data-id="2" data-name="Rosan KM33401 Tus" data-price="5740mkd">
+            <img src="images/tus2.png" alt="Rosan Tus Baterija">
+            <p>Rosan KM33401 Tus</p>
+            <p>5,740.00mkd</p>
+            <button id="increment2">+</button>
+            <input type="number" id ="quantity2" disabled value = "1" min = "1">
+            <button id="decrement2">-</button>
+            <button id="sub2" type="submit">Add to cart</button>
+        </div>
+        <div id="karticka3" data-id="3" data-name="Rosan LN37901 Tus" data-price="4900mkd">
+            <img src="images/tus3.png" alt="Rosan Tus Baterija">
+            <p>Rosan LN37901 Tus</p>
+            <p>4,900.00mkd</p>
+            <button id="increment3">+</button>
+            <input type="number" id ="quantity3" disabled value = "1" min = "1">
+            <button id="decrement3">-</button>
+            <button id="sub3" type="submit">Add to cart</button>
+        </div>
+        <div id="karticka4"data-id="4" data-name="Rosan ST52601 Tus" data-price="4640mkd">
+            <img src="images/tus4.png" alt="Rosan Tus Baterija">
+            <p>Rosan ST52601 Tus</p>
+            <p>4,640.00mkd</p>
+            <button id="increment4">+</button>
+            <input type="number" id="quantity4" disabled value = "1" min = "1">
+            <button id="decrement4">-</button>
+            <button id="sub4" type="submit">Add to cart</button>
+        </div>
+    </div>
+    <div class="bannerPopust">
+        <hr>
+        <h1>Popust</h1>
+        <div class="flexCard">
+       <div class="firstRow">
+            <div>
+                <img src="images/inecco.jpg" alt="Inecco set">
+                <p>Bateriski Alat</p>
+                <p>Bateriski Set</p>
+            </div>
+            <div>
+                <img src="images/CKLI2009IM.jpg" alt="Rosan Tus Baterija">
+                <p>Bateriski Alat</p>
+                <p>Bateriski set</p>
+            </div>
+            <div>
+                <img src="images/CVLI2001.jpg" alt="Rosan Tus Baterija">
+                <p>Bateriski Alat</p>
+                <p>Bateriska pravosmukalka</p>
+            </div>
+            <div>
+                <img src="images/ID11008.jpg" alt="Rosan Tus Baterija">
+                <p>Bateriski Alat</p>
+                <p>Udarna dupcalka 1100W</p>
+            </div>
+       </div>
+        <div class="secondRow">
+            <div>
+                <img src="images/VC20258.jpg" alt="Rosan Tus Baterija">
+                <p>Elektricen Alat</p>
+                <p>Pravosmukalka</p>
+            </div>
+            <div>
+                <img src="images/AVC12202.jpg" alt="Rosan Tus Baterija">
+                <p>Elektricen Alat</p>
+                <p>Pravosmukalka za peleti</p>
+            </div>
+            <div>
+                <img src="images/HLL306505.jpg" alt="Rosan Tus Baterija">
+                <p>Elektricen Alat</p>
+                <p>Laserski nivelator</p>
+            </div>
+            <div>
+                <img src="images/MX218008.jpg" alt="Rosan Tus Baterija">
+                <p>Elektricen Alat</p>
+                <p>Mesalka</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<hr>
+
+<footer>
+    <div class="row">
+    <div>Contact
+        <hr>
+        <p>Telefon: </p>
+        <a>+389 70 676 666</a>
+        <br>
+        <a>+389 70 466 666</a>
+    </div>
+        <div>Email
+            <hr>
+            <p>bistrejd1@gmail.com</p>
+            <a id="facebook" href="https://www.facebook.com/bistrejd"></a>
+            <a id="instagram" href="https://www.instagram.com/bis.trejd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></a>
+            <a id="gmail" href="mailto:bistrejd1@gmail.com"></a>
+        </div>
+    <div>Adress
+    <hr>
+        <a>Bulevar Partizanski Odredi br. 27</a>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0720564958274!2d21.422037300000003!3d41.998729100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354144c0e2f02d7%3A0xbe6c0d1e6ae3fe3c!2sBis%20Trejd!5e0!3m2!1sen!2smk!4v1749209282529!5m2!1sen!2smk" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <p>Copyright 2025 Bis Trejd. All rights reserved.</p>
+</footer>
+<div id="lineCart">
+    <p>Succesfully added to your cart</p>
+</div>
+</body>
+<script>
+    const hardbutton = document.getElementById('hardware');
+    const hardlist = document.querySelector('.cardFlexHardware');
+    hardbutton.addEventListener('click', () => {
+        hardlist.classList.toggle('show');
+        homelist.classList.remove('show');
+        sanilist.classList.remove('show');
+        colorlist.classList.remove('show');
+        bicyclelist.classList.remove('show');
+    });
+    const homebutton = document.getElementById('home');
+    const homelist = document.querySelector('.cardFlexHomeDevices');
+    homebutton.addEventListener('click', () => {
+        homelist.classList.toggle('show');
+        hardlist.classList.remove('show');
+        sanilist.classList.remove('show');
+        colorlist.classList.remove('show');
+        bicyclelist.classList.remove('show');
+    });
+    const colorbutton = document.getElementById('color');
+    const colorlist = document.querySelector('.cardFlexColors');
+    colorbutton.addEventListener('click', () => {
+        homelist.classList.remove('show');
+        hardlist.classList.remove('show');
+        sanilist.classList.remove('show');
+        colorlist.classList.toggle('show');
+        bicyclelist.classList.remove('show');
+    });
+    const sanibutton = document.getElementById('sanitary');
+    const sanilist = document.querySelector('.cardFlexSanitary');
+    sanibutton.addEventListener('click', () => {
+        homelist.classList.remove('show');
+        hardlist.classList.remove('show');
+        sanilist.classList.toggle('show');
+        colorlist.classList.remove('show');
+        bicyclelist.classList.remove('show');
+    });
+    const bicyclebutton = document.getElementById('bicycle');
+    const bicyclelist = document.querySelector('.cardFlexBicycles');
+    bicyclebutton.addEventListener('click', () => {
+        bicyclelist.classList.toggle('show');
+        hardlist.classList.remove('show');
+        homelist.classList.remove('show');
+        sanilist.classList.remove('show');
+        colorlist.classList.remove('show');
+    });
+    const incrementButton1 = document.getElementById('increment1');
+    const quantity1 = document.getElementById('quantity1');
+    incrementButton1.addEventListener('click', () => {
+        quantity1.value = parseInt(quantity1.value) + 1;
+    })
+
+    const incrementButton2 = document.getElementById('decrement1');
+    const quantity2 = document.getElementById('quantity1');
+    incrementButton2.addEventListener('click', () => {
+       if (quantity2.value > 0) {
+               quantity2.value = parseInt(quantity2.value) - 1;
+       }
+    })
+    const incrementButton3 = document.getElementById('increment2');
+    const quantity3 = document.getElementById('quantity2');
+    incrementButton3.addEventListener('click', () => {
+        quantity3.value = parseInt(quantity3.value) + 1;
+    })
+    const incrementButton4 = document.getElementById('decrement2');
+    const quantity4 = document.getElementById('quantity2');
+    incrementButton4.addEventListener('click', () => {
+        if (quantity4.value > 0) {
+            quantity4.value = parseInt(quantity4.value) - 1;
+        }
+    })
+    const incrementButton5 = document.getElementById('increment3');
+    const quantity5 = document.getElementById('quantity3');
+    incrementButton5.addEventListener('click', () => {
+        quantity5.value = parseInt(quantity5.value) + 1;
+    })
+    const incrementButton6 = document.getElementById('decrement3');
+    const quantity6 = document.getElementById('quantity3');
+    incrementButton6.addEventListener('click', () => {
+        if (quantity6.value > 0) {
+            quantity6.value = parseInt(quantity6.value) - 1;
+        }
+    })
+    const incrementButton7 = document.getElementById('increment4');
+    const quantity7 = document.getElementById('quantity4');
+    incrementButton7.addEventListener('click', () => {
+        quantity7.value = parseInt(quantity7.value) + 1;
+    })
+    const incrementButton8 = document.getElementById('decrement4');
+    const quantity8 = document.getElementById('quantity4');
+    incrementButton8.addEventListener('click', () => {
+        if(quantity8.value > 0) {
+        quantity8.value = parseInt(quantity8.value) - 1;
+            }
+    })
+    const subButton1 = document.getElementById('sub1');
+    const quantity10 = document.getElementById('quantity1');
+    const message = document.getElementById('lineCart');
+    const qu01 = document.getElementById('qu1');
+    subButton1.addEventListener('click', () => {
+        if(quantity10.value > 0) {
+            qu01.value = parseInt(quantity10.value) + parseInt(qu01.value);
+            quantity10.value = "1";
+            setTimeout(() => {
+                message.classList.toggle('show');
+                setTimeout(() => {
+                    message.classList.remove('show');
+                }, 2000);
+            }, 500);
+        }
+        const listaProdukti = JSON.parse(localStorage.getItem('cart-container')) || [];
+        const card = subButton1.closest('#karticka1');
+        const name = card.dataset.name;
+        const id = card.dataset.id;
+        const price = card.dataset.price;
+        item1 = listaProdukti.find(item => item.id === id);
+        if(item1){
+                item1.quantity = parseInt(item1.quantity) + parseInt(qu01.value);
+        } else{
+            listaProdukti.push({
+                name: name,
+                price: price,
+                id: id,
+                quantity: parseInt(qu01.value)
+            });
+        }
+        localStorage.setItem('cart-container', JSON.stringify(listaProdukti));
+
+    })
+    const subButton2 = document.getElementById('sub2');
+    const quantity11 = document.getElementById('quantity2');
+    const message1 = document.getElementById('lineCart');
+    const qu10 = document.getElementById('qu1');
+    subButton2.addEventListener('click', () => {
+        if(quantity11.value > 0) {
+            qu10.value = parseInt(quantity11.value)+parseInt(qu10.value);
+            quantity11.value = "1";
+            setTimeout(() => {
+                message1.classList.toggle('show');
+                setTimeout(() => {
+                    message1.classList.remove('show');
+                }, 2000);
+            }, 500);
+        }
+        const listaProdukti = JSON.parse(localStorage.getItem('cart-container')) || [];
+        const card = subButton2.closest('#karticka2');
+        const name = card.dataset.name;
+        const id = card.dataset.id;
+        const price = card.dataset.price;
+        item2 = listaProdukti.find(item => item.id === id);
+        if(item2){
+            item2.quantity = parseInt(item1.quantity) + parseInt(qu10.value);
+        } else{
+            listaProdukti.push({
+                name: name,
+                price: price,
+                id: id,
+                quantity: parseInt(qu10.value)
+            });
+        }
+        localStorage.setItem('cart-container', JSON.stringify(listaProdukti));
+
+    })
+
+    const subButton3 = document.getElementById('sub3');
+    const quantity13 = document.getElementById('quantity3');
+    const message3 = document.getElementById('lineCart');
+    const qu3 = document.getElementById('qu1');
+    subButton3.addEventListener('click', () => {
+        if(quantity13.value > 0) {
+            qu3.value = parseInt(quantity13.value)+parseInt(qu3.value);
+            quantity13.value = "1";
+            setTimeout(() => {
+                message3.classList.toggle('show');
+                setTimeout(() => {
+                    message3.classList.remove('show');
+                }, 2000);
+            }, 500);
+        }
+        const listaProdukti = JSON.parse(localStorage.getItem('cart-container')) || [];
+        const card = document.getElementById('karticka3');
+        const name = card.dataset.name;
+        const id = card.dataset.id;
+        const price = card.dataset.price;
+        item3 = listaProdukti.find(item => item.id === id);
+        if(item3){
+            item3.quantity = parseInt(item3.quantity) + parseInt(qu3.value);
+        } else{
+            listaProdukti.push({
+                name: name,
+                price: price,
+                id: id,
+                quantity: parseInt(qu3.value)
+            });
+        }
+        localStorage.setItem('cart-container', JSON.stringify(listaProdukti));
+    })
+    const subButton4 = document.getElementById('sub4');
+    const quantity14 = document.getElementById('quantity4');
+    const message4 = document.getElementById('lineCart');
+    const qu4= document.getElementById('qu1');
+    subButton4.addEventListener('click', () => {
+        if(quantity14.value > 0) {
+            qu4.value = parseInt(quantity14.value)+parseInt(qu4.value);
+            quantity14.value = "1";
+            setTimeout(() => {
+                message4.classList.toggle('show');
+                setTimeout(() => {
+                    message4.classList.remove('show');
+                }, 2000);
+            }, 500);
+        }
+        const listaProdukti = JSON.parse(localStorage.getItem('cart-container')) || [];
+        const card = subButton4.closest('#karticka4');
+        const name = card.dataset.name;
+        const id = card.dataset.id;
+        const price = card.dataset.price;
+        item4 = listaProdukti.find(item => item.id === id);
+        if(item4){
+            item4.quantity = parseInt(item4.quantity) + parseInt(qu4.value);
+        } else{
+            listaProdukti.push({
+                name: name,
+                price: price,
+                id: id,
+                quantity: parseInt(qu4.value)
+            });
+        }
+        localStorage.setItem('cart-container', JSON.stringify(listaProdukti));
+    })
+    const emptyButton1 = document.getElementById('empty');
+    const quantity15 = document.getElementById('qu1');
+    const container = document.getElementById('cart-container');
+    emptyButton1.addEventListener('click', () => {
+        quantity15.value = "0";
+        const listaProdukti = [];
+        localStorage.setItem('cart-container', JSON.stringify([]));
+        container.innerHTML = '';
+    })
+
+
+</script>
+</html>
